@@ -10,7 +10,6 @@ main {
 section {
   background-color: #282b5c;
   height: 100vh;
-  width: 100vw;
 }
 
 .parallax--hero {
@@ -77,7 +76,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 .parallax__container .image {
   background-position: center center;
@@ -108,13 +106,12 @@ section {
   background-color: #efe2d1;
   font-family: "Cormorant Infant", serif;
   letter-spacing: 1px;
-  -webkit-box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.4);
 }
 .parallax__container .text p {
   width: 90%;
-  margin: auto;
   text-align: justify;
 }
 .parallax__container .text a {
@@ -142,6 +139,27 @@ footer {
 }
 footer a {
   color: beige;
+}
+
+@media screen and (max-width: 1023px) {
+  #mountain,
+#flowers {
+    background-position: unset;
+  }
+
+  #text h1 {
+    margin-top: 40vh;
+    max-width: 120px;
+  }
+
+  .heading {
+    transform: translateY(10vh) translateZ(1px) scale(1.1);
+  }
+}
+@media screen and (max-width: 767px) {
+  #text h1 {
+    font-size: 7vw;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

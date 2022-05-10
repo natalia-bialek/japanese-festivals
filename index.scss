@@ -1,7 +1,7 @@
 $blue-color: #282b5c;
 $grey-color: rgb(58, 58, 58);
 $black-color: black;
-$black-color--opacity: rgba(0, 0, 0, 0.6);
+$black-color--opacity: rgba(0, 0, 0, 0.4);
 $red-color: rgb(226, 19, 19);
 $beige-color: beige;
 
@@ -16,7 +16,6 @@ main {
 section {
   background-color: $blue-color;
   height: 100vh;
-  width: 100vw;
 }
 
 .parallax--hero {
@@ -84,7 +83,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
   }
 
   .image {
@@ -130,7 +128,6 @@ section {
 
     p {
       width: 90%;
-      margin: auto;
       text-align: justify;
     }
 
@@ -161,5 +158,31 @@ footer {
 
   a {
     color: $beige-color;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #mountain,
+  #flowers {
+    background-position: unset;
+  }
+
+  #text {
+    h1 {
+      margin-top: 40vh;
+      max-width: 120px;
+    }
+  }
+
+  .heading {
+    transform: translateY(10vh) translateZ(1px) scale(1.1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #text {
+    h1 {
+      font-size: 7vw;
+    }
   }
 }
